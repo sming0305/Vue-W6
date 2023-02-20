@@ -1,0 +1,50 @@
+@import "bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "bootstrap/scss/bootstrap";
+@import "./mixin/mixin.scss";
+@import "./utilities/utilities";
+
+body,
+html {
+  height: 100%;
+}
+
+main {
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+input{
+  color: white
+}
+
+.m0-auto {
+  margin: 0 auto;
+}
+
+.background-image-layout {
+  @include fullPageLayout(
+    "https://images.unsplash.com/photo-1615361200141-f45040f367be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80",
+    center,
+    center,
+    100vh
+  );
+}
+
+.page-link:focus {
+  box-shadow: none !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
