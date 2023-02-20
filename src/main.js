@@ -8,7 +8,7 @@ import App from "./App.vue";
 import router from "./router";
 
 import "./assets/all.scss";
-import "../node_modules/bootstrap/dist/js/bootstrap.js";
+import "bootstrap";
 
 const app = createApp(App);
 
